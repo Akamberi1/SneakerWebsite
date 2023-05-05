@@ -1,0 +1,692 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(224, 220, 220);
+    margin: 0 10%;
+    height: 10vh;
+}
+
+.image-items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.links {
+    text-decoration: none;
+    color: rgb(99, 97, 97);
+    font-family: 'Kumbh Sans', sans-serif;
+    text-underline-offset: 40px;
+}
+
+.links:hover {
+    text-decoration: underline;
+    text-underline-offset: 40px;
+    text-decoration-color: orange;
+    text-decoration-thickness: 3px;
+    cursor: pointer;
+}
+
+.header-image {
+    width: 20%;
+}
+
+.listItems {
+    width: 68%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 12%;
+}
+
+.shop-image {
+    cursor: pointer;
+    box-sizing: border-box;
+    position: absolute;
+    right: 18%;
+}
+
+.circle {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Arial;
+    position: absolute;
+    right: 17.7%;
+    z-index: 12;
+    top: 28px;
+    display: none;
+}
+
+.profile-guy {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.profile-guy::selection {
+    color: none;
+}
+
+.profile-guy:hover {
+    box-sizing: content-box;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 100%;
+    border-color: orange;
+}
+
+.cart-menu {
+    width: 305px;
+    height: 200px;
+    position: absolute;
+    top: 8.5vh;
+    right: 11vw;
+    z-index: 1;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px lightgray;
+    display: none;
+}
+
+.cart-name {
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid lightgray;
+    padding: 13px;
+}
+
+.cart-name-p {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    position: relative;
+    left: 2%;
+
+}
+
+.cart-description {
+    width: 100%;
+    height: 75%;
+    position: relative;
+}
+
+.cart-description-p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Kumbh Sans', sans-serif;
+    color: rgb(96, 93, 93);
+    font-size: 14px;
+    font-weight: 700;
+    /* display: none; */
+}
+
+.boughtHeader {
+    width: 100%;
+    height: 22%;
+    display: none;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 30%;
+    left: 1%;
+    align-items: center;
+
+}
+
+.contentOfShoes {
+    width: 58%;
+    height: 100%;
+    line-height: 1.5;
+}
+
+.shoesDescription {
+    font-size: 13px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: normal;
+    color: rgb(101, 99, 99);
+}
+
+.lastButton {
+    width: 88%;
+    padding: auto;
+    height: 23%;
+    position: relative;
+    left: 6%;
+    bottom: 34%;
+    background-color: rgb(255, 125, 27);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 900;
+    cursor: pointer;
+    display: none;
+}
+
+.delete {
+    cursor: pointer;
+    position: absolute;
+    left: 89%;
+    opacity: 0;
+}
+
+.small-products {
+    width: 95px;
+    height: 95px;
+    border-radius: 8px;
+    z-index: 15;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.small-products::selection {
+    color: none;
+}
+
+.small-products:hover {
+    opacity: 0.5;
+}
+
+#father-div:hover {
+    cursor: pointer;
+}
+
+.father-div-2 {
+    width: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+
+    position: absolute;
+    bottom: 13vh;
+    left: 12.5vw;
+}
+
+
+
+.text-main {
+    width: 50vh;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    top: 20vh;
+    left: 50vw;
+}
+
+.text {
+    height: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+h1 {
+    position: relative;
+    color: darkorange;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 900;
+    top: 10px;
+}
+
+h2 {
+    font-size: 30px;
+    width: 70%;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 900;
+}
+
+.fp {
+    font-family: 'Kumbh Sans', sans-serif;
+    color: rgb(101, 99, 99);
+    line-height: 1.6;
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-between;
+    width: 27%;
+    flex-wrap: wrap;
+    line-height: 1.6;
+}
+
+.back-discount {
+    background-color: rgb(255, 234, 206);
+    font-size: 16px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 900;
+    color: orange;
+    width: 38px;
+    position: relative;
+    top: 11px;
+    left: 6px;
+    height: 2vh;
+    border-radius: 5px;
+}
+
+.discount {
+    top: 0;
+    left: 0;
+    transform: translate(11%, -15%);
+    position: absolute;
+}
+
+.was {
+    text-decoration: line-through;
+    color: rgb(181, 180, 180);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.price {
+    font-size: 24px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 900;
+}
+
+.add-btn {
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.plus-minus {
+    background-color: rgb(240, 243, 250);
+    width: 35%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.zero {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 900;
+}
+
+.button {
+    width: 62%;
+    background-color: darkorange;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 900;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.button-text {
+    position: relative;
+    left: 0px;
+    top: -3px;
+}
+
+.shop-image2 {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 5px;
+    left: -5px;
+}
+
+.minus,
+.plus {
+    cursor: pointer;
+}
+
+.blur-background {
+    background-color: rgba(255, 111, 0, 0.644);
+
+}
+
+.show {
+    width: 50vh;
+    height: 50vh;
+    position: absolute;
+    left: 14vw;
+    top: 25vh;
+    border-radius: 10px;
+}
+
+.big-products {
+    display: none;
+
+}
+
+.opacity {
+    opacity: 0.3;
+}
+
+#shefi {
+    width: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+    position: absolute;
+    bottom: 13vh;
+    left: 12.5vw;
+}
+
+#shefi2 {
+    width: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+    position: absolute;
+    bottom: 0vh;
+    left: 2.2vw;
+    z-index: -10;
+}
+
+.anotherHidden {
+    width: 96px;
+    height: 95px;
+    border-radius: 8px;
+    z-index: -1;
+    border: 3px solid orange;
+    /* position: absolute;
+    bottom: 12.9vh;
+    left: 25.6vh; */
+    z-index: 1;
+    visibility: hidden;
+
+}
+
+.anotherHidden2 {
+    z-index: 3;
+    width: 96px;
+    height: 95px;
+    border-radius: 8px;
+    background-color: white;
+    visibility: hidden;
+
+}
+
+.anotherRevealed2 {
+    z-index: 3;
+    width: 96px;
+    height: 95px;
+    border-radius: 8px;
+    background-color: white;
+    visibility: visible;
+
+}
+
+.anotherRevealed {
+    width: 96px;
+    height: 95px;
+    border-radius: 8px;
+    z-index: -1;
+    border: 3px solid orange;
+    /* position: absolute;
+    bottom: 12.9vh;
+    left: 25.6vh; */
+    z-index: 1;
+    visibility: visible;
+
+}
+
+
+/* .divs1 {
+    width: 96px;
+    height: 95px;
+    border-radius: 8px;
+    z-index: -1;
+    border: 3px solid orange;
+    position: absolute;
+    bottom: 12.9vh;
+    left: 25.6vh;
+    visibility: hidden;
+
+
+
+}
+.anotherHidden2{
+    width: 96px;
+    height: 95px;
+    border-radius: 8px;
+    z-index: -1;
+    border: 3px solid white;
+    position: absolute;
+    bottom: 12.9vh;
+    left: 25.6vh;
+    z-index: 5;
+    visibility: visible;
+} */
+
+/* carousel developing.. */
+.carousel {
+    width: 60vh;
+    height: 77vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* display: none; */
+
+    display: none;
+}
+
+.close-btn {
+    position: absolute;
+    right: 0;
+}
+
+.close-btn:hover {
+    cursor: pointer;
+}
+
+.close-btn:hover>.closeX {
+    fill: orange;
+}
+
+
+.carousel-big {
+    position: absolute;
+    height: 60%;
+    width: 50vh;
+    top: 10%;
+}
+
+.carousel-big-items {
+    width: 100%;
+    height: 60vh;
+    border-radius: 10px;
+    position: absolute;
+    top: 5%;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.appear {
+    width: 100%;
+    height: 60vh;
+    border-radius: 10px;
+    position: absolute;
+    top: 5%;
+    z-index: 21;
+}
+
+.carousel-small {
+    height: 30%;
+    width: 87%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
+    left: 9%;
+}
+
+.carousel-small-items {
+    width: 95px;
+    height: 95px;
+    border-radius: 8px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    /* opacity: 1; */
+
+}
+
+
+.circleNext {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -100%);
+    z-index: 25;
+
+}
+
+.circleNext:hover>.next>.stroke-next {
+    stroke: orange;
+}
+
+.circleNext:hover {
+    cursor: pointer;
+}
+
+.next {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-44%, -50%);
+
+}
+
+.circlePrevious {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100%;
+    z-index: 25;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.previous {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-65%, -50%);
+}
+
+.circlePrevious:hover>.previous>.stroke-previous {
+    stroke: orange;
+}
+
+.circlePrevious:hover {
+    cursor: pointer;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.831);
+    backdrop-filter: blur(3px);
+    display: none;
+    z-index: 15;
+}
+
+.no-hover {
+    pointer-events: none;
+}
+
+/* .theLast-div-2 {
+    width: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+
+    position: absolute;
+    bottom: 13vh;
+    left: 12.5vw;
+    visibility: hidden;
+    opacity: 0.5;
+}
+
+.theLast-small-products {
+    width: 95px;
+    height: 95px;
+    border-radius: 8px;
+    z-index: 2;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    
+
+} */
+
+.hover-header {
+    height: 30%;
+    width: 87%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
+    left: 9%;
+}
+
+.hover-items {
+    width: 95px;
+    height: 95px;
+    border-radius: 8px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    /* opacity: 1; */
+}
+
+.hover-items:hover {
+    border: 47px solid rgba(255, 255, 255, 0.338);
+}
